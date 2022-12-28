@@ -24,12 +24,14 @@ main {
     padding: 10px 10px 10px 10px;
 }
 
+
 #pic1 {
-    width: 280px;
     height: 150px;
     background-image: url(img/flow01.png);
     background-size: cover;
 }
+
+
 
 h3 {
     padding-top:15px;
@@ -51,14 +53,12 @@ h3 {
 }
 
 #pic2 {
-    width: 280px;
     height: 150px;
     background-image: url(img/flow02.png);
     background-size: cover;
 }
 
 #pic3 {
-    width: 280px;
     height: 150px;
     background-image: url(img/flow03.png);
     background-size: cover;
@@ -69,4 +69,45 @@ footer {
     height: 50px;
     background-color: #AAAAAA;
 }
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin:  50px auto; 
+        display: block; /* Flexboxの利用 */
+    }
+
+    .step {
+        position: relative;
+        width: 90%;
+        background-color: #EEEEEE;
+        justify-content: center; /* 要素の横並び・中央寄せ */
+        margin: 0 auto;
+    } 
+
+    #pic1 {
+        height: 150px;
+        background-image: url(img/flow01.png);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #pic2 {
+        height: 150px;
+        background-image: url(img/flow02.png);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    #pic3 {
+        height: 150px;
+        background-image: url(img/flow03.png);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .step:nth-child(2) {
+        margin: 20px auto;
+    }
+  }
 
